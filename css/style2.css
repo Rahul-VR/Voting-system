@@ -1,0 +1,205 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
+.div1{
+	text-align: center;
+	border-radius: 25px;
+    border: 2px solid #009688;
+	width: 320px;
+    height: 420px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    top: 60%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 30px 30px;
+}
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 100px;
+	color: #219b0e;
+}
+
+.div1 input[type="button"]
+{
+    outline: none;
+    height: 50px;
+	width: 150px;
+    background: #009688;
+	font-weight: bold;
+    color: #fff;
+    font-size: 18px;
+	border-radius: 25px;
+    border: 2px solid #009688;
+	cursor:pointer;
+	position: relative;
+	overflow:hidden;
+	
+}
+.div1 input[type="button"]:hover{
+	background: #1a6794;
+	color: #01dce3;
+}
+.popup{
+	background: rgba(0,0,0,0.6);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+.popup2{
+	background: rgba(0,0,0,0.6);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	display: none;
+	align-items: center;
+	justify-content: center;
+}
+.popup-content{
+    width: 320px;
+    height: 420px;
+    background: #555253;
+    color: #fff;
+    top: 60%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+	
+}
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+.login-box h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+	text-decoration: none;
+}	
+.login-box p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.login-box input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.login-box input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.login-box input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1CE7E0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+
+}
+.login-box input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #39dc79;
+    color: #000;
+}
+
+.login-box input[type="button"]
+{
+    border: none;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.close{
+	position: absolute;
+	top: -15px;
+	right: -15px;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	cursor: pointer;
+	background: #555253;
+}
+.close2{
+	position: absolute;
+	top: -15px;
+	right: -15px;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	cursor: pointer;
+	background: #555253;
+}
+.admin input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1CE7E0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+
+}
+.admin input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #39dc79;
+    color: #000;
+}
+.admin button[type="submit"]
+	{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1CE7E0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+
+}
+.admin button[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #39dc79;
+    color: #000;
+}
+	
+
+
+
