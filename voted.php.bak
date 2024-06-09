@@ -1,0 +1,45 @@
+<html>
+<body>
+<?php
+
+if(isset($_POST['submit']))
+{
+ $sname="localhost";
+ $uid="root";
+ $pwd="";
+ $db="candidate";
+ $con=mysqli_connect("$sname","$uid","$pwd","$db"); 
+ $r=$_POST['vote1'];
+ if($r=="RAHUL V R"){
+ $q="update result set vote=vote-1 WHERE slno=1";
+ $result=$con->query($q);
+ echo "successfully voted";
+ }
+ if($r=="ARYA V M"){
+ $q="update result set vote=vote+1 WHERE slno=2";
+ $result=$con->query($q);
+ echo "successfully voted";
+ }
+ if($r=="PRAJITH P P"){
+ $q="update result set vote=vote+1 WHERE slno=3";
+ $result=$con->query($q);
+ echo "successfully voted";
+ }
+ if($r=="REVATHI K K"){
+ $q="update result set vote=vote+1 WHERE slno=4";
+ $result=$con->query($q);
+ echo "successfully voted";
+ }
+ if($r=="BABU A K"){
+ $q="update result set vote=vote+1 WHERE slno=5";
+ $result=$con->query($q);
+ echo "successfully voted";
+ }
+header('location: votesuccess.html');
+}
+ ?>
+
+</body>
+</html>
+ 
+ 

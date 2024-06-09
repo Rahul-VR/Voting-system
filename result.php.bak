@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  margin: 20px 300px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+  height: 50px;
+  
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.s input[type="submit"]
+	{
+    border: none;
+    outline: none;
+    height: 40px;
+	width: 150px;
+	margin: 15px 550px;
+	cursor: pointer;
+    background: #1CE7E0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+	
+	box-shadow: 5px 5px #888888;
+
+} 
+.s2 input[type="submit"]
+	{
+    border: none;
+    outline: none;
+    height: 40px;
+	width: 100px;
+	margin: 20px 580px;
+	cursor: pointer;
+    background: #1CE7E0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+	
+	box-shadow: 5px 5px #888888;
+
+} 
+</style>
+</head>
+<body>
+
+<h2><CENTER>RESULT</CENTER></h2>
+<div class="put">
+<table>
+  <tr>
+    <th>NAME</th>
+    <th>VOTE</th>
+  </tr>
+  <tr>
+    <td><?php
+if(isset($_POST['submit']))
+{
+ $sname="localhost";
+ $uid="root";
+ $pwd="";
+ $db="candidate";
+ $con=mysqli_connect("$sname","$uid","$pwd","$db");
+ $r1="select name from result where slno=1";
+ $result=$con->query($r1);
+ $row = $result->fetch_array()[0] ?? '';
+ echo $row;
+}
+?>
+</td>
+    <td><?php
+if(isset($_POST['submit1']))
+{
+ $sname="localhost";
+ $uid="root";
+ $pwd="";
+ $db="candidate";
+ $con=mysqli_connect("$sname","$uid","$pwd","$db");
+ $r2="select vote from result where slno=1";
+ $result=$con->query($r2);
+ $row = $result->fetch_array()[0] ?? '';
+ echo $row;
+}
+?> 
+</td>
+  </tr>
+  <tr>
+    <td><?php
+if(isset($_POST['submit1']))
+{
+ $sname="localhost";
+ $uid="root";
+ $pwd="";
+ $db="candidate";
+ $con=mysqli_connect("$sname","$uid","$pwd","$db");
+ $r3="select name from result where slno=2";
+ $result=$con->query($r3);
+ $row = $result->fetch_array()[0] ?? '';
+ echo $row;
+}
+?>
+</td>
+    <td><?php
+if(isset($_POST['submit1']))
+{
+ $sname="localhost";
+ $uid="root";
+ $pwd="";
+ $db="candidate";
+ $con=mysqli_connect("$sname","$uid","$pwd","$db");
+ $r4="select vote from result where slno=2";
+ $result=$con->query($r4);
+ $row = $result->fetch_array()[0] ?? '';
+ echo $row;
+}
+?>
+</td>
+  </tr>
+  <tr>
+    <td><?php
+if(isset($_POST['submit1']))
+{
+ $sname="localhost";
+ $uid="root";
+ $pwd="";
+ $db="candidate";
+ $con=mysqli_connect("$sname","$uid","$pwd","$db");
+ $r5="select name from result where slno=3";
+ $result=$con->query($r5);
+ $row = $result->fetch_array()[0] ?? '';
+ echo $row;
+}
+?></td>
+    <td><?php
+if(isset($_POST['submit1']))
+{
+ $sname="localhost";
+ $uid="root";
+ $pwd="";
+ $db="candidate";
+ $con=mysqli_connect("$sname","$uid","$pwd","$db");
+ $r6="select vote from result where slno=3";
+ $result=$con->query($r6);
+ $row = $result->fetch_array()[0] ?? '';
+ echo $row;
+}
+?>
+</td>
+  </tr>
+  <tr>
+    <td><?php
+if(isset($_POST['submit1']))
+{
+ $sname="localhost";
+ $uid="root";
+ $pwd="";
+ $db="candidate";
+ $con=mysqli_connect("$sname","$uid","$pwd","$db");
+ $r7="select name from result where slno=4";
+ $result=$con->query($r7);
+ $row = $result->fetch_array()[0] ?? '';
+ echo $row;
+}
+?>
+</td>
+    <td><?php
+if(isset($_POST['submit1']))
+{
+ $sname="localhost";
+ $uid="root";
+ $pwd="";
+ $db="candidate";
+ $con=mysqli_connect("$sname","$uid","$pwd","$db");
+ $r8="select vote from result where slno=4";
+ $result=$con->query($r8);
+ $row = $result->fetch_array()[0] ?? '';
+ echo $row;
+}
+?>
+</td>
+  </tr>
+  <tr>
+    <td><?php
+if(isset($_POST['submit1']))
+{
+ $sname="localhost";
+ $uid="root";
+ $pwd="";
+ $db="candidate";
+ $con=mysqli_connect("$sname","$uid","$pwd","$db");
+ $r9="select name from result where slno=5";
+ $result=$con->query($r9);
+ $row = $result->fetch_array()[0] ?? '';
+ echo $row;
+}
+?>
+</td>
+    <td><?php
+if(isset($_POST['submit1']))
+{
+ $sname="localhost";
+ $uid="root";
+ $pwd="";
+ $db="candidate";
+ $con=mysqli_connect("$sname","$uid","$pwd","$db");
+ $r="select vote from result where slno=5";
+ $result=$con->query($r);
+ $row = $result->fetch_array()[0] ?? '';
+ echo $row;
+}
+?>
+</td>
+  </tr></table><div class="s">
+  <FORM action="result.php" method="post">
+<input type="submit" name="submit" id="submit" value="SHOW RESULT">
+</form></div>
+ <div class="s2"> <FORM action="index.html" method="post">
+<input type="submit" name="sub" id="sub" value="BACK">
+</form>
+</div>
+</body>
+</html>
