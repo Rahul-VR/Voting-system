@@ -1,0 +1,101 @@
+<html>
+<head><title>Registration form</title>
+<link rel="stylesheet" type="text/css" href="../css/form_css.css">   
+</head>
+<body>
+
+
+
+            <form action="php_file.php" method="post">
+            <h1>Student Registration Form</h1>
+<table align="center" cellpadding = "10">
+<tr>
+<td>First Name</td>
+<td><input type="text" name="FirstName" maxlength="50" placeholder="first name" />
+(Max 50 Characters Allowed)
+</td>
+</tr>
+<tr>
+<td>Last Name</td>
+<td><input type="text" name="LastName" maxlength="50" placeholder="last name"/>
+(Max 50 Characters Allowed)
+</td>
+</tr>
+<tr>
+<td>Register number</td>
+<td><input type="number" name="regno" maxlength="100" placeholder="register number"/></td>
+</tr>
+<tr>
+<td>Mobile Number</td>
+<td>
+<input type="text" name="MobileNumber" maxlength="10" placeholder="ph number"/>
+(10 Digits Allowed)
+</td>
+</tr>
+<tr>
+<td>Gender</td>
+<td>
+<input type="radio" name="Gender" value="Male" />
+Male
+<input type="radio" name="Gender" value="Female" />
+Female
+</td>
+</tr>
+<tr>
+<td>Date of Birth(DOB)</td>
+<td>
+<input type="text" name="BirthDay" id="Birthday_Day" placeholder="DD-MM-YYYY">
+</td>
+</tr>
+<tr>
+<td>Address<br /><br /><br /></td>
+<td><textarea name="Address" rows="10" cols="50" placeholder></textarea></td>
+</tr>
+<tr>
+<td>current Attendance Percentage</td>
+<td><input type="text" name="per" maxlength="50" placeholder="Percentage"/>
+(Don't add % symbol)
+</td>
+</tr>
+<tr>
+<td>Pin Code</td>
+<td><input type="Number" name="PinCode" maxlength="6" placeholder="pin code"/>
+(Max 6 Numbers Allowed)
+</td>
+</tr>
+<tr>
+<td>State</td>
+<td><input type="text" name="State" maxlength="50" placeholder="Kerala"/>
+(Max 50 Characters Allowed)
+</td>
+</tr>
+<tr>
+<td>Country</td>
+<td><input type="text" name="Country" placeholder="India" /></td>
+</tr>
+<tr>
+<td>Course<br /><br /><br /></td>
+<td><textarea name="Course" rows="5" cols="50" placeholder="course"></textarea></td>
+</tr>
+<tr>
+<td>user name</td>
+<td><input type="text" name="usr" maxlength="50" placeholder="username" />
+(This is the user name for this student to login)
+</td>
+</tr>
+<tr>
+<td>password</td>
+<td><input type="password" name="pass" maxlength="50" placeholder="password" />
+(This is the password for login )
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Submit" name="submit">
+<input type="reset" value="Reset">
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>

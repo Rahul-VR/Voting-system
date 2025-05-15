@@ -1,0 +1,21 @@
+<html>
+<body>
+<link  rel="stylesheet" href="C:\Users\Rahul\Desktop\new\css\candidate.css" type="text/css">
+<div id="bg">
+  <div class="module">
+    <ul>
+      <li class="tab activeTab"><img src="\new\image\logo.png" alt="" class="icon"/></li>
+	  <br><br><br><br><H1>REGISTER</H1>
+    </ul>
+    
+    <form class="form">
+      <input type="text" placeholder="First Name" class="textbox" required />
+      <input type="text" placeholder="Last Name" class="textbox" required />
+      <input type="text" placeholder="Department" class="textbox" required />
+	   <input type="text" placeholder="register number" class="textbox" required />
+      <input type="submit" value="Next" class="button" />
+    </form>
+  </div>
+</div>
+</body>
+</html>

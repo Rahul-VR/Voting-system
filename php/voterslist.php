@@ -1,0 +1,30 @@
+<html>
+<title>College election</title>
+<body>
+<link rel="stylesheet" href="..\css\voter_list.css">
+<div class="row print-container">
+<h1>VOTERS LIST</h1>
+<p class="r">
+<table><tr><th>SL NO</th><th>NAME</th><th>REGISTER&nbsp&nbsp NO</th><th>DEPARTMENT</th></tr>
+<?php
+ $sname="localhost";
+ $uid="root";
+ $pwd="";
+ $db="election";
+ $con=mysqli_connect("$sname","$uid","$pwd","$db"); 
+ $sql="select sl_no,reg_no,first_name,last_name,course from student";
+ $result=$con->query($sql);
+ while($row=$result->fetch_assoc())
+ {
+	 echo "<tr>"."<td>".$row["sl_no"]."<td>".$row["first_name"]."&nbsp".$row["last_name"]."</td>"."</td>"."<td>".$row["reg_no"]."</td>"."<td>".$row["course"]."</td></tr>";
+ }
+
+
+?>
+</table>
+</p>
+</div>
+<button class="button" onclick="window.print()">Print</button>
+<a href="../index.php"><button class="button">Back</button></a>
+</body>
+</html>

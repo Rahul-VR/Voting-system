@@ -1,0 +1,107 @@
+<html>
+<body>
+<link rel="stylesheet" href="../css/votesuccess.css">
+<?php
+
+if(isset($_POST['submit']))
+{
+ $sname="localhost";
+ $uid="root";
+ $pwd="";
+ $db="election";
+ $con=mysqli_connect("$sname","$uid","$pwd","$db"); 
+ $r=$_POST['vote1'];
+ $r2=$_POST['vote2'];
+ $r3=$_POST['vote3'];
+ $r4=$_POST['vote4'];
+ if($r=="1"){
+ $q="update candidatechairman set vote=vote+1 WHERE slno=1";
+ $result=$con->query($q);
+ }
+ if($r=="2"){
+ $q="update candidatechairman set vote=vote+1 WHERE slno=2";
+ $result=$con->query($q);
+ }
+ if($r=="3"){
+ $q="update candidatechairman set vote=vote+1 WHERE slno=3";
+ $result=$con->query($q);
+ }
+ if($r=="4"){
+ $q="update candidatechairman set vote=vote+1 WHERE slno=4";
+ $result=$con->query($q);
+ }
+ if($r=="5"){
+ $q="update candidatechairman set vote=vote+1 WHERE slno=5";
+ $result=$con->query($q);
+ }
+ if($r2=="1"){
+ $q="update candidatevicechairman set vote=vote+1 WHERE slno=1";
+ $result=$con->query($q);
+ }
+ if($r2=="2"){
+ $q="update candidatevicechairman set vote=vote+1 WHERE slno=2";
+ $result=$con->query($q);
+ }
+ if($r2=="3"){
+ $q="update candidatevicechairman set vote=vote+1 WHERE slno=3";
+ $result=$con->query($q);
+ }
+ if($r2=="4"){
+ $q="update candidatevicechairman set vote=vote+1 WHERE slno=4";
+ $result=$con->query($q);
+ }
+ if($r2=="5"){
+ $q="update candidatevicechairman set vote=vote+1 WHERE slno=5";
+ $result=$con->query($q);
+ }
+ if($r3=="1"){
+ $q="update candidatecouncillor set vote=vote+1 WHERE slno=1";
+ $result=$con->query($q);
+ }
+ if($r3=="2"){
+ $q="update candidatecouncillor set vote=vote+1 WHERE slno=2";
+ $result=$con->query($q);
+ }
+ if($r3=="3"){
+ $q="update candidatecouncillor set vote=vote+1 WHERE slno=3";
+ $result=$con->query($q);
+ }
+ if($r3=="4"){
+ $q="update candidatecouncillor set vote=vote+1 WHERE slno=4";
+ $result=$con->query($q);
+ }
+ if($r3=="5"){
+ $q="update candidatecouncillor set vote=vote+1 WHERE slno=5";
+ $result=$con->query($q);
+ }
+ if($r4=="1"){
+ $q="update candidatemagazine set vote=vote+1 WHERE slno=1";
+ $result=$con->query($q);
+ }
+ if($r4=="2"){
+ $q="update candidatemagazine set vote=vote+1 WHERE slno=2";
+ $result=$con->query($q);
+ }
+ if($r4=="3"){
+ $q="update candidatemagazine set vote=vote+1 WHERE slno=3";
+ $result=$con->query($q);
+ }
+ if($r4=="4"){
+ $q="update candidatemagazine set vote=vote+1 WHERE slno=4";
+ $result=$con->query($q);
+ }
+ if($r4=="5"){
+ $q="update candidatemagazine set vote=vote+1 WHERE slno=5";
+ $result=$con->query($q);
+ }
+ echo "<h1>YOUR VOTE IS COUNTED</h1>
+<h3>CLICK THE BUTTON TO HOME PAGE</h3>
+<button class="button" style="vertical-align:middle"><a href="../index.php"><span>BACK </span></a></button>";
+//header('location: \new\html\votesuccess.html');
+}
+ ?>
+
+</body>
+</html>
+ 
+ 

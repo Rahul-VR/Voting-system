@@ -1,0 +1,5 @@
+--
+-- DATABASE:`election'
+--
+
+Insert into candidatechairman(reg_no,first_name,last_name,Department,post,vote)values(1022,"Greeshma","VG","Bsc CS","CHAIRMAN",0),(1025,"Srejith","UG","Bsc CS","CHAIRMAN",0);

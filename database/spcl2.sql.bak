@@ -1,0 +1,7 @@
+--
+-- DATABASE:`election'
+--
+Insert into candidatechairman(first_name,last_name,Department,post,vote)values("Abhijith","KS","Bsc CS","CHAIRMAN",0),("Manya","TM","Bsc CS","CHAIRMAN",0),("Anusree","KV","Bsc CS","CHAIRMAN",0);
+Insert into candidatecouncillor(first_name,last_name,Department,post,vote)values("Krishnapriya","KS","Bsc CS","COUNCILLOR",0),("Anjali","Sasikumar","Bsc CS","COUNCILLOR",0),("Sniya","Manoharan","Bsc CS","COUNCILLOR",0),("Smrithi","Chandran","Bsc CS","COUNCILLOR",0),("Saranya","Sasi","Bsc CS","COUNCILLOR",0);
+Insert into candidatemagazine(first_name,last_name,Department,post,vote)values("Shijitha","Shilu","Bsc CS","MAGAZINE-EDITOR",0),("Abhiraj","MR","Bsc CS","MAGAZINE-EDITOR",0),("Ajay","PS","Bsc CS","MAGAZINE-EDITOR",0),("Anand","Unnikrishnan","Bsc CS","MAGAZINE-EDITOR",0),("Arjun","S nair","Bsc CS","MAGAZINE-EDITOR",0);
+Insert into candidatevicechairman(first_name,last_name,Department,post,vote)values("Fesmeer","Noushad","Bsc CS","VICE-CHAIRMAN",0),("Rahul","VR","Bsc CS","VICE-CHAIRMAN",0),("Rahul","Suresh","Bsc CS","VICE-CHAIRMAN",0),("Adarsh","NS","Bsc CS","VICE-CHAIRMAN",0),("Parvathi","MD","Bsc CS","VICE-CHAIRMAN",0);

@@ -1,0 +1,326 @@
+
+<HTML>
+    <HEAD>
+        <link rel="stylesheet" href="../css/vote.css">
+        <title>Vote</title>
+    </HEAD>
+    <BODY><div class="h1"><H1>CHAIRMAN</H1></div>
+        <div class="h2"><H1>VICE-CHAIRMAN</H1></div>
+        <div class="h3"><H1>COUNCILLOR</H1></div> 
+        <div class="h4"><p><H1>MAGAZINE EDITOR</H1></p></div> 
+	<div class="frm">
+        <form action="../php/voted.php" method="post">
+		        <div class="one">
+                <input type="radio" name="vote1" value="1" /><label>
+<?php
+ $sname="localhost";
+ $uid="root";
+ $pwd="";
+ $db="election";
+ $con=mysqli_connect("$sname","$uid","$pwd","$db"); 
+ $sql1="select first_name,last_name from candidatechairman where slno=1";
+ $result=$con->query($sql1);
+ while($row=$result->fetch_assoc())
+ {
+	 echo $row["first_name"]."&nbsp".$row["last_name"];
+ }
+?>
+</label><BR><br>
+                <input type="radio" name="vote1" value="2" /><label>
+				<?php
+				session_start();
+ $sname="localhost";
+ $uid="root";
+ $pwd="";
+ $db="election";
+ $con=mysqli_connect("$sname","$uid","$pwd","$db"); 
+ $sql2="select first_name,last_name from candidatechairman where slno=2";
+ $result=$con->query($sql2);
+ while($row=$result->fetch_assoc())
+ {
+	 echo $row["first_name"]."&nbsp".$row["last_name"];
+ }
+?>
+				</label> <BR><br>
+			    <input type="radio" name="vote1" value="3" /><label>
+				<?php
+ $sname="localhost";
+ $uid="root";
+ $pwd="";
+ $db="election";
+ $con=mysqli_connect("$sname","$uid","$pwd","$db"); 
+ $sql3="select first_name,last_name from candidatechairman where slno=3";
+ $result=$con->query($sql3);
+ while($row=$result->fetch_assoc())
+ {
+	 echo $row["first_name"]."&nbsp".$row["last_name"];
+ }
+?>
+				</label><BR><br>
+			    <input type="radio" name="vote1" value="4" /><label>
+				<?php
+ $sname="localhost";
+ $uid="root";
+ $pwd="";
+ $db="election";
+ $con=mysqli_connect("$sname","$uid","$pwd","$db"); 
+ $sql4="select first_name,last_name from candidatechairman where slno=4";
+ $result=$con->query($sql4);
+ while($row=$result->fetch_assoc())
+ {
+	 echo $row["first_name"]."&nbsp".$row["last_name"];
+ }
+?>
+				</label><BR><br>
+			    <input type="radio" name="vote1" value="5" /><label>
+				<?php
+ $sname="localhost";
+ $uid="root";
+ $pwd="";
+ $db="election";
+ $con=mysqli_connect("$sname","$uid","$pwd","$db"); 
+ $sql5="select first_name,last_name from candidatechairman where slno=5";
+ $result=$con->query($sql5);
+ while($row=$result->fetch_assoc())
+ {
+	 echo $row["first_name"]."&nbsp".$row["last_name"];
+ }
+?>
+				</label><BR><br>
+				</div>
+                <div class="two">
+                    <input type="radio" name="vote2" value="1" /><label>
+<?php
+ $sname="localhost";
+ $uid="root";
+ $pwd="";
+ $db="election";
+ $con=mysqli_connect("$sname","$uid","$pwd","$db"); 
+ $sql6="select first_name,last_name from candidatevicechairman where slno=1";
+ $result=$con->query($sql6);
+ while($row=$result->fetch_assoc())
+ {
+	 echo $row["first_name"]."&nbsp".$row["last_name"];
+ }
+?>
+					</label><BR><br>
+                    <input type="radio" name="vote2" value="2" /><label>
+<?php
+ $sname="localhost";
+ $uid="root";
+ $pwd="";
+ $db="election";
+ $con=mysqli_connect("$sname","$uid","$pwd","$db"); 
+ $sql7="select first_name,last_name from candidatevicechairman where slno=2";
+ $result=$con->query($sql7);
+ while($row=$result->fetch_assoc())
+ {
+	 echo $row["first_name"]."&nbsp".$row["last_name"];
+ }
+?>
+					</label> <BR><br>
+                    <input type="radio" name="vote2" value="3" /><label>
+<?php
+ $sname="localhost";
+ $uid="root";
+ $pwd="";
+ $db="election";
+ $con=mysqli_connect("$sname","$uid","$pwd","$db"); 
+ $sql8="select first_name,last_name from candidatevicechairman where slno=3";
+ $result=$con->query($sql8);
+ while($row=$result->fetch_assoc())
+ {
+	 echo $row["first_name"]."&nbsp".$row["last_name"];
+ }
+?>
+					</label><BR><br>
+                    <input type="radio" name="vote2" value="4" /><label>
+<?php
+ $sname="localhost";
+ $uid="root";
+ $pwd="";
+ $db="election";
+ $con=mysqli_connect("$sname","$uid","$pwd","$db"); 
+ $sql9="select first_name,last_name from candidatevicechairman where slno=4";
+ $result=$con->query($sql9);
+ while($row=$result->fetch_assoc())
+ {
+	 echo $row["first_name"]."&nbsp".$row["last_name"];
+ }
+?>
+					</label><BR><br>
+                    <input type="radio" name="vote2" value="5" /><label>
+<?php
+ $sname="localhost";
+ $uid="root";
+ $pwd="";
+ $db="election";
+ $con=mysqli_connect("$sname","$uid","$pwd","$db"); 
+ $sql10="select first_name,last_name from candidatevicechairman where slno=5";
+ $result=$con->query($sql10);
+ while($row=$result->fetch_assoc())
+ {
+	 echo $row["first_name"]."&nbsp".$row["last_name"];
+ }
+?>
+					</label><BR><br>
+                </div>  
+                <div class="three">
+                    <input type="radio" name="vote3" value="1" /><label>
+<?php
+ $sname="localhost";
+ $uid="root";
+ $pwd="";
+ $db="election";
+ $con=mysqli_connect("$sname","$uid","$pwd","$db"); 
+ $sql11="select first_name,last_name from candidatecouncillor where slno=1";
+ $result=$con->query($sql11);
+ while($row=$result->fetch_assoc())
+ {
+	 echo $row["first_name"]."&nbsp".$row["last_name"];
+ }
+?>
+					</label><BR><br>
+                    <input type="radio" name="vote3" value="2" /><label>
+<?php
+ $sname="localhost";
+ $uid="root";
+ $pwd="";
+ $db="election";
+ $con=mysqli_connect("$sname","$uid","$pwd","$db"); 
+ $sql12="select first_name,last_name from candidatecouncillor where slno=2";
+ $result=$con->query($sql12);
+ while($row=$result->fetch_assoc())
+ {
+	 echo $row["first_name"]."&nbsp".$row["last_name"];
+ }
+?>
+					</label> <BR><br>
+                    <input type="radio" name="vote3" value="3" /><label>
+<?php
+ $sname="localhost";
+ $uid="root";
+ $pwd="";
+ $db="election";
+ $con=mysqli_connect("$sname","$uid","$pwd","$db"); 
+ $sql13="select first_name,last_name from candidatecouncillor where slno=3";
+ $result=$con->query($sql13);
+ while($row=$result->fetch_assoc())
+ {
+	 echo $row["first_name"]."&nbsp".$row["last_name"];
+ }
+?>
+					</label><BR><br>
+                    <input type="radio" name="vote3" value="4" /><label>
+<?php
+ $sname="localhost";
+ $uid="root";
+ $pwd="";
+ $db="election";
+ $con=mysqli_connect("$sname","$uid","$pwd","$db"); 
+ $sql14="select first_name,last_name from candidatecouncillor where slno=4";
+ $result=$con->query($sql14);
+ while($row=$result->fetch_assoc())
+ {
+	 echo $row["first_name"]."&nbsp".$row["last_name"];
+ }
+?>
+					</label><BR><br>
+                    <input type="radio" name="vote3" value="5" /><label>
+<?php
+ $sname="localhost";
+ $uid="root";
+ $pwd="";
+ $db="election";
+ $con=mysqli_connect("$sname","$uid","$pwd","$db"); 
+ $sql15="select first_name,last_name from candidatecouncillor where slno=5";
+ $result=$con->query($sql15);
+ while($row=$result->fetch_assoc())
+ {
+	 echo $row["first_name"]."&nbsp".$row["last_name"];
+ }
+?>
+					</label><BR><br>
+                </div>
+                <div class="four">
+                    <input type="radio" name="vote4" value="1" /><label>
+<?php
+ $sname="localhost";
+ $uid="root";
+ $pwd="";
+ $db="election";
+ $con=mysqli_connect("$sname","$uid","$pwd","$db"); 
+ $sql16="select first_name,last_name from candidatemagazine where slno=1";
+ $result=$con->query($sql16);
+ while($row=$result->fetch_assoc())
+ {
+	 echo $row["first_name"]."&nbsp".$row["last_name"];
+ }
+?>
+					</label><BR><br>
+                    <input type="radio" name="vote4" value="2" /><label>
+<?php
+ $sname="localhost";
+ $uid="root";
+ $pwd="";
+ $db="election";
+ $con=mysqli_connect("$sname","$uid","$pwd","$db"); 
+ $sql17="select first_name,last_name from candidatemagazine where slno=2";
+ $result=$con->query($sql17);
+ while($row=$result->fetch_assoc())
+ {
+	 echo $row["first_name"]."&nbsp".$row["last_name"];
+ }
+?>
+					</label> <BR><br>
+                    <input type="radio" name="vote4" value="3" /><label>
+<?php
+ $sname="localhost";
+ $uid="root";
+ $pwd="";
+ $db="election";
+ $con=mysqli_connect("$sname","$uid","$pwd","$db"); 
+ $sql18="select first_name,last_name from candidatemagazine where slno=3";
+ $result=$con->query($sql18);
+ while($row=$result->fetch_assoc())
+ {
+	 echo $row["first_name"]."&nbsp".$row["last_name"];
+ }
+?>
+					</label><BR><br>
+                    <input type="radio" name="vote4" value="4" /><label>
+<?php
+ $sname="localhost";
+ $uid="root";
+ $pwd="";
+ $db="election";
+ $con=mysqli_connect("$sname","$uid","$pwd","$db"); 
+ $sql19="select first_name,last_name from candidatemagazine where slno=4";
+ $result=$con->query($sql19);
+ while($row=$result->fetch_assoc())
+ {
+	 echo $row["first_name"]."&nbsp".$row["last_name"];
+ }
+?>
+					</label><BR><br>
+                    <input type="radio" name="vote4" value="5" /><label>
+<?php
+ $sname="localhost";
+ $uid="root";
+ $pwd="";
+ $db="election";
+ $con=mysqli_connect("$sname","$uid","$pwd","$db"); 
+ $sql20="select first_name,last_name from candidatemagazine where slno=5";
+ $result=$con->query($sql20);
+ while($row=$result->fetch_assoc())
+ {
+	 echo $row["first_name"]."&nbsp".$row["last_name"];
+ }
+?>
+					</label><BR><br>
+                </div> 
+            <input type="submit" value="submit" name="submit">
+        </form>
+	</div>
+    </BODY>
+</HTML>

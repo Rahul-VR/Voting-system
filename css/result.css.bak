@@ -1,0 +1,64 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  margin: 20px 300px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+  height: 50px;
+  
+}
+@media print {
+	/* Hide every other elements */
+	body * {
+		visibility: hidden;
+	}
+	 @page {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+	/*then display the print container elements */
+	.put, .put * {
+	visibility: visible;
+	
+	}
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.s button
+	{
+    border: none;
+    outline: none;
+    height: 40px;
+	width: 150px;
+	margin: 15px 550px;
+	cursor: pointer;
+    background: #1CE7E0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+	
+	box-shadow: 5px 5px #888888;
+
+} 
+.s2 input[type="submit"]
+	{
+    border: none;
+    outline: none;
+    height: 40px;
+	width: 100px;
+	margin: 20px 580px;
+	cursor: pointer;
+    background: #1CE7E0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+	
+	box-shadow: 5px 5px #888888;
+
+} 
