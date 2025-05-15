@@ -15,9 +15,13 @@ This is a PHP-based Online Voting System developed as part of an academic projec
 
 online-voting-system/
 ├── css/ # Stylesheets
+
 ├── html/ # HTML templates
+
 ├── index.php # Main entry point
+
 ├── Database/ # Database sql file
+
 └── README.md # Project description
 
 ## 🛠️ Technologies Used
