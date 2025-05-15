@@ -14,6 +14,7 @@ This is a PHP-based Online Voting System developed as part of an academic projec
 ## 📂 Project Structure
 
 online-voting-system/
+
 ├── css/ # Stylesheets
 
 ├── html/ # HTML templates
