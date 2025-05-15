@@ -41,4 +41,4 @@ online-voting-system/
 
 ## 📸 Screenshot
 
-
+![Image](https://github.com/user-attachments/assets/3984ceb2-7556-4a25-b1dd-11ce04e0eeae)
